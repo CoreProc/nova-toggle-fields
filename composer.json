@@ -1,13 +1,13 @@
 {
     "name": "coreproc/nova-toggle-fields",
-    "description": "A Laravel Nova tool.",
+    "description": "A Laravel Nova action that enables you to toggle fields on the index of your resource.",
     "keywords": [
         "laravel",
         "nova"
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0"
+        "php": "^8.0.2"
     },
     "autoload": {
         "psr-4": {
