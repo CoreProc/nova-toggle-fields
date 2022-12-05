@@ -19,6 +19,8 @@ class ToggleFields extends Action
 
     public $standalone = true;
 
+    public $confirmText = 'Check or uncheck to toggle the fields below.';
+
     public function __construct(string $resource, $fieldCollection)
     {
         $this->resource = $resource;
