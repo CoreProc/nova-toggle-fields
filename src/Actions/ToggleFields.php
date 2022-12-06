@@ -61,7 +61,7 @@ class ToggleFields extends Action
         $hiddenFields = ToggleFieldUtilities::parseHiddenFieldsRefererParams($request);
 
         foreach ($this->fieldCollection as $field) {
-            $actionField = Boolean::make($field->name);
+            $actionField = Boolean::make($field->name, $field->attribute);
 
             if (! in_array($field->attribute, $hiddenFields)) {
                 $actionField->withMeta(['value' => true]);
